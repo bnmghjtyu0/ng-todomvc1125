@@ -13,7 +13,12 @@ export class AppComponent {
   enter(element) {
     console.log(this.todo);
     if(this.todo) {
-      this.todos.push(this.todo);
+      // this.todos.push(this.todo);
+      let newTodo = {
+        text:this.todo,
+        boolean:false
+      }
+      this.todos.push(newTodo)
       this.todo = '';
     }
   }
