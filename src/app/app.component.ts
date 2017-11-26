@@ -18,7 +18,8 @@ export class AppComponent {
         text:this.todo,
         boolean:false
       }
-      this.todos.push(newTodo)
+      // this.todos.push(newTodo)
+      this.todos = this.todos.concat(newTodo);
       this.todo = '';
     }
   }
