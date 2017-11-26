@@ -9,8 +9,12 @@ export class AppComponent {
   title = "app";
   placeholder: string = "Dream come true";
   todos: any[] = [];
+  todo: string = "";
   enter(element) {
-    console.log(element.value)
-    this.todos.push(element.value);
+    console.log(this.todo);
+    if(this.todo) {
+      this.todos.push(this.todo);
+      this.todo = '';
+    }
   }
 }
