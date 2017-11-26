@@ -8,4 +8,9 @@ import { Component } from "@angular/core";
 export class AppComponent {
   title = "app";
   placeholder: string = "Dream come true";
+  todos: any[] = [];
+  enter(element) {
+    console.log(element.value)
+    this.todos.push(element.value);
+  }
 }
